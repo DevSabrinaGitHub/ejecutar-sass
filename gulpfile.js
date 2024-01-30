@@ -15,7 +15,7 @@ function css(done){
 
     src('src/scss/app.scss')
     .pipe( sass ()) //ejecuta esto primero
-    .pipe(dest("build/css")); //luego ejecuta el sigueinte pipe
+    .pipe(dest("build/css")); //luego ejecuta el sigueinte pipe y almacena en disco duro
 
     done(); //callback que avisa a gulp cuando llegamos al final, es decir cuando ya terminamos la tarea
 
