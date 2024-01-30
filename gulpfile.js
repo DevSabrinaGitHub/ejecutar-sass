@@ -17,12 +17,8 @@ function css(done){
     .pipe( sass ()) //ejecuta esto primero
     .pipe(dest("build/css")); //luego ejecuta el sigueinte pipe
 
-    
-
-
-
-
-
-
     done(); //callback que avisa a gulp cuando llegamos al final, es decir cuando ya terminamos la tarea
+
 }
+
+exports.css= css;
